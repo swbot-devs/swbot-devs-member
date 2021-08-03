@@ -574,16 +574,16 @@ h6 {
   font-size: 24px;
 }
 
-/* swbot_devs_member Section
+/* sdm Section
 --------------------------------*/
 
-#swbot_devs_member {
+#sdm {
   background: #ffffff;
   padding: 60px 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-#swbot_devs_member .member {
+#sdm .member {
   text-align: center;
   margin-bottom: 20px;
   position: relative;
@@ -591,7 +591,7 @@ h6 {
   overflow: hidden;
 }
 
-#swbot_devs_member .member .member-info {
+#sdm .member .member-info {
   opacity: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -613,50 +613,50 @@ h6 {
   transition: 0.2s;
 }
 
-#swbot_devs_member .member .member-info-content {
+#sdm .member .member-info-content {
   margin-top: 50px;
   transition: margin 0.2s;
 }
 
-#swbot_devs_member .member:hover .member-info {
+#sdm .member:hover .member-info {
   background: rgba(71, 133, 225, 0.65);
   opacity: 1;
   transition: 0.4s;
 }
 
-#swbot_devs_member .member:hover .member-info-content {
+#sdm .member:hover .member-info-content {
   margin-top: 0;
   transition: margin 0.4s;
 }
 
-#swbot_devs_member .member h4 {
+#sdm .member h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
   color: #ffffff;
 }
 
-#swbot_devs_member .member span {
+#sdm .member span {
   font-style: italic;
   display: block;
   font-size: 13px;
   color: #ffffff;
 }
 
-#swbot_devs_member .member .social {
+#sdm .member .social {
   margin-top: 15px;
 }
 
-#swbot_devs_member .member .social a {
+#sdm .member .social a {
   transition: none;
   color: #ffffff;
 }
 
-#swbot_devs_member .member .social a:hover {
+#sdm .member .social a:hover {
   color: #000000;
 }
 
-#swbot_devs_member .member .social i {
+#sdm .member .social i {
   font-size: 18px;
   margin: 0 2px;
 }
