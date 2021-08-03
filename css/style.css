@@ -574,16 +574,16 @@ h6 {
   font-size: 24px;
 }
 
-/* sdm Section
+/* Bots Section
 --------------------------------*/
 
-#sdm {
+#Bots {
   background: #ffffff;
   padding: 60px 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-#sdm .member {
+#Bots .member {
   text-align: center;
   margin-bottom: 20px;
   position: relative;
@@ -591,7 +591,7 @@ h6 {
   overflow: hidden;
 }
 
-#sdm .member .member-info {
+#Bots .member .member-info {
   opacity: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -613,50 +613,50 @@ h6 {
   transition: 0.2s;
 }
 
-#sdm .member .member-info-content {
+#Bots .member .member-info-content {
   margin-top: 50px;
   transition: margin 0.2s;
 }
 
-#sdm .member:hover .member-info {
+#Bots .member:hover .member-info {
   background: rgba(71, 133, 225, 0.65);
   opacity: 1;
   transition: 0.4s;
 }
 
-#sdm .member:hover .member-info-content {
+#Bots .member:hover .member-info-content {
   margin-top: 0;
   transition: margin 0.4s;
 }
 
-#sdm .member h4 {
+#Bots .member h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
   color: #ffffff;
 }
 
-#sdm .member span {
+#Bots .member span {
   font-style: italic;
   display: block;
   font-size: 13px;
   color: #ffffff;
 }
 
-#sdm .member .social {
+#Bots .member .social {
   margin-top: 15px;
 }
 
-#sdm .member .social a {
+#Bots .member .social a {
   transition: none;
   color: #ffffff;
 }
 
-#sdm .member .social a:hover {
+#Bots .member .social a:hover {
   color: #000000;
 }
 
-#sdm .member .social i {
+#Bots .member .social i {
   font-size: 18px;
   margin: 0 2px;
 }
