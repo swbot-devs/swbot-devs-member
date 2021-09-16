@@ -1,0 +1,201 @@
+<html lang="ko"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>식품의약품안전처 의약품통합정보시스템 의약품정보 상세보기 업체정보</title>
+  <link rel="stylesheet" href="//staticnedrug.mfds.go.kr/resources/css/import.css">
+  <script type="text/javascript" src="//staticnedrug.mfds.go.kr/static/lib/jquery/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="//staticnedrug.mfds.go.kr/resources/js/common-pbp.js"></script>
+  <script>
+      /*<![CDATA[*/
+      var entpSeq = "20208826"
+      
+      $(document).ready(function () {
+          getList('1');
+      });
+      
+      function getList(page){
+          param = {};
+          param.entpSeq = entpSeq;
+          param.page = page;
+          
+          $.get("/pbp/CCBBB01/getEntpItemList", param, function (result) {
+              $('#list').replaceWith(result);
+          });
+      }
+      
+      function closeEntpInfoPopup() {
+          window.close();
+      }
+      
+      /*]]>*/
+  </script>
+  <noscript class="noScriptTitle">자바스크립트를 지원하지 않는 브라우저에서는 일부 기능을 사용하실 수 없습니다.</noscript>
+  <style>
+      body,html{min-width:0px;}
+      .korea_wrap {position:relative; width:680px; height:auto; border:8px solid #2caec6}
+      .korea_wrap header {width:96%; margin:0 auto; padding-bottom:20px;}
+      .korea_wrap header div { font-weight: 600; padding-left: 35px; background: url(../../../../../resources/images/int_img/bbsctt.png) 0px 1px no-repeat; height: 70px;}
+
+      .mt20, .drug_info_mid .info_box{margin-top:10px !important;}
+
+      @media screen and (max-width: 767px) {
+          .page_navi a:nth-child(n+6){display: none;}
+      }
+
+  </style>
+</head>
+
+<body>
+<div class="korea_wrap">
+  <header>
+      <div>
+          <h1>단체정보</h1>
+          <button type="button" title="창닫기" onclick="window.close();"></button>
+      </div>
+  </header>
+
+  <div class="con">
+      <p class="text_st3 mt10">기본정보</p>
+      <table class="tb_base">
+          <caption>
+              <span>단체 기본정보 테이블 : 단체명, 업종코드, 대표자명</span>
+          </caption>
+          <colgroup>
+              <col style="width:15%">
+              <col style="width:35%">
+              <col style="width:15%">
+              <col style="width:35%">
+          </colgroup>
+          <tbody>
+          <tr>
+              <th scope="row" class="al_c">단체명</th>
+              <td colspan="3">swbot</td>
+          </tr>
+          
+          <tr>
+              <th scope="row" class="al_c">업종코드</th>
+              <td>정보검색소프트웨어</td>
+              <th scope="row" class="al_c">대표자명</th>
+              <td>이성원</td>
+          </tr>
+          </tbody>
+      </table>
+
+      
+          <p class="text_st3 mt20">공장리스트 - 1건</p>
+          <table class="tb_base">
+              <caption>
+                  <span>공장 리스트 테이블 : 순번, 공장명, 우편번호, 주소 정보 제공</span>
+              </caption>
+              <colgroup>
+                  <col style="width:6%">
+                  <col style="width:30%">
+                  <col style="width:14%">
+                  <col style="width:50%">
+              </colgroup>
+              <thead>
+              <tr>
+                  <th scope="col">순번</th>
+                  <th scope="col">공장명</th>
+                  <th scope="col">우편번호</th>
+                  <th scope="col">주소</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td class="al_c">1</td>
+                  <td>제1공장</td>
+                  <td class="al_c">15617</td>
+                  <td>경기도 안산시 단원구  별망로 66 1동 3층일부</td>
+              </tr>
+              </tbody>
+          </table>
+      
+
+      <div id="list">
+      <p class="text_st3 mt20">품목리스트 - 5건</p>
+      <table class="tb_base">
+          <caption>
+              <span>품목리스트 테이블 :: 순번, 품목명</span>
+          </caption>
+          <colgroup>
+              <col style="width:6%">
+              <col style="width:74%">
+              <!--<col style="width:39%">-->
+              <col style="width:20%">
+          </colgroup>
+          <thead>
+          <tr>
+              <th scope="col">순번</th>
+              <th scope="col">품목명</th>
+              <!--<th scope="col">품목 영문명</th>-->
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td class="al_c">1</td>
+              <td>
+                  <a href="/pbp/CCBBB01/getItemDetail?itemSeq=202007101" target="_blank" title="새창열림">월드비말차단용마스크(KF-AD)(대형)(흰색,청색)</a>
+              </td>
+              <!--<td class="al_c" th:text="${list.itemEngName}"></td>-->
+              <td class="al_c"></td>
+          </tr>
+          <tr>
+              <td class="al_c">2</td>
+              <td>
+                  <a href="/pbp/CCBBB01/getItemDetail?itemSeq=202100328" target="_blank" title="새창열림">월드쿨보건용마스크(KF80)(흰색)(대형)</a>
+              </td>
+              <!--<td class="al_c" th:text="${list.itemEngName}"></td>-->
+              <td class="al_c"></td>
+          </tr>
+          <tr>
+              <td class="al_c">3</td>
+              <td>
+                  <a href="/pbp/CCBBB01/getItemDetail?itemSeq=202100585" target="_blank" title="새창열림">월드하이진수술용마스크(대형)(흰색)</a>
+              </td>
+              <!--<td class="al_c" th:text="${list.itemEngName}"></td>-->
+              <td class="al_c"></td>
+          </tr>
+          <tr>
+              <td class="al_c">4</td>
+              <td>
+                  <a href="/pbp/CCBBB01/getItemDetail?itemSeq=202006929" target="_blank" title="새창열림">월드황사방역용마스크(KF94)(대형)(흰색,검정색)</a>
+              </td>
+              <!--<td class="al_c" th:text="${list.itemEngName}"></td>-->
+              <td class="al_c"></td>
+          </tr>
+          </tbody>
+          
+      </table>
+      <div class="spDiv" id="paging_div">
+      <p class="page_navi">
+          <button type="button" title="처음" class="page_first disabled">처음</button>
+          
+
+          <button type="button" title="이전" class="page_prev disabled">이전</button>
+          
+
+          
+              <a href="#list" class="on" title="현재페이지">1</a>
+              
+          
+
+          <button type="button" title="다음" class="page_next disabled">다음</button>
+          
+
+          <button type="button" title="마지막" class="page_last disabled">마지막</button>
+          
+      </p>
+  </div>
+  </div>
+  </div>
+
+  <div class="bot">
+      <div class="closed">
+          <button type="button" title="닫기" onclick="window.close();">닫기</button>
+      </div>
+  </div>
+</div>
+
+</body><whale-quicksearch translate="no"></whale-quicksearch></html>
